@@ -1,0 +1,33 @@
+@import "config";
+
+// Widescreens
+@include mediaXl {
+  body {
+    // background-color: $main-color;
+  }
+}
+
+// Desktops & Laptops
+@include mediaLg {
+  body {
+    // background-color: darkblue;
+  }
+}
+
+// Tablets & Small Laptops
+@include mediaMd {
+  body {
+    // background-color: orange;
+  }
+}
+
+// Smartphones
+@include mediaSm {
+  body {
+    // background-color: pink;
+  }
+}
+
+// Landscape
+@include Landscape {
+}

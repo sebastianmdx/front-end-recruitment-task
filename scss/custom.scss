@@ -1,0 +1,133 @@
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+@import "config";
+$xl: 1200px;
+$lg: 991px;
+$md: 768px;
+$sm: 576px;
+$main-color: #f0f0f0;
+$secondary-color: #e4c1ae;
+
+body {
+  color: #000000;
+  background-color: $main-color;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent {
+  .image-box {
+    height: 408px;
+    width: 570px;
+    background-image: url(/images/1400.jpg);
+    background-size: cover;
+    background-position: center;
+    @media (max-width: $md) {
+      background-image: url(/images/784.jpg);
+    }
+    @media (max-width: $sm) {
+      background-image: url(/images/480.jpg);
+    }
+  }
+  .text-box {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: $sm) {
+      text-align: center;
+    }
+    h1 {
+      font-size: 42px;
+      font-weight: 700;
+      padding: 10px 90px;
+      margin-top: 40px;
+      @media (max-width: $lg) {
+        font-size: 24px;
+        padding: 10px 70px;
+      }
+    }
+    p {
+      font-size: 16px;
+      padding: 20px 95px;
+      font-weight: 300;
+      @media (max-width: $lg) {
+        font-size: 14px;
+        padding: 10px 70px;
+      }
+    }
+    .btn {
+      background-color: $secondary-color;
+      border-radius: 50px;
+      margin: 20px 90px;
+      padding: 10px 43px;
+      justify-self: flex-end;
+      text-align: center;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      align-self: flex-end;
+      @media (max-width: $sm) {
+        margin: 40px 0 !important;
+      }
+      @media (max-width: $md) {
+        margin: 40px 0 !important;
+      }
+      @media (max-width: $lg) {
+        align-self: center;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+@import "mobile";
